@@ -109,7 +109,7 @@ function calculateWinner(squares) {
         const current = history[history.length - 1];
         const winner = calculateWinner(current.squares);
 
-        //Mapping Previous Moves
+        //Mapping Previous Moves step by step
         const moves = history.map((step, move) => {
             const desc = move ?
                 'Go to move #'  + move :
